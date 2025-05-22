@@ -1,0 +1,21 @@
+File,Start Line,End Line,OP,Tips
+NA,NA,NA,torch_npu.npu.set_compile_mode,"If it is a dynamic shape scenario, it is recommended to set torch_npu.npu.set_compile_mode(jit_compile=False) above the training entry file; if it is a fixed shape scenario, it is recommended to set torch_npu.npu.set_compile_mode(jit_compile=True) above the training entry file.
+For more information, please refer to: https://www.hiascend.com/document/detail/zh/canncommercial/700/modeldevpt/ptmigr/AImpug_000060.html"
+NA,NA,NA,TASK_QUEUE_ENABLE,"If you want to improve performance, please set environment variables 'export TASK_QUEUE_ENABLE=1'."
+NA,NA,NA,HCCL_OP_BASE_FFTS_MODE_ENABLE,"If you want to improve performance, please set environment variables 'export HCCL_OP_BASE_FFTS_MODE_ENABLE=TRUE'."
+train.py,352,352,to,"To optimize communication between devices, it is recommended to set non_blocking to True.
+For more information, please refer to: https://www.hiascend.com/document/detail/zh/canncommercial/700/modeldevpt/ptmigr/AImpug_000055.html"
+colossal_llama/model/init_model.py,55,55,to,"To optimize communication between devices, it is recommended to set non_blocking to True.
+For more information, please refer to: https://www.hiascend.com/document/detail/zh/canncommercial/700/modeldevpt/ptmigr/AImpug_000055.html"
+colossal_llama/model/init_model.py,75,75,to,"To optimize communication between devices, it is recommended to set non_blocking to True.
+For more information, please refer to: https://www.hiascend.com/document/detail/zh/canncommercial/700/modeldevpt/ptmigr/AImpug_000055.html"
+colossal_llama/model/init_model.py,97,97,to,"To optimize communication between devices, it is recommended to set non_blocking to True.
+For more information, please refer to: https://www.hiascend.com/document/detail/zh/canncommercial/700/modeldevpt/ptmigr/AImpug_000055.html"
+colossal_llama/utils/stream_chat_patch.py,115,115,to,"To optimize communication between devices, it is recommended to set non_blocking to True.
+For more information, please refer to: https://www.hiascend.com/document/detail/zh/canncommercial/700/modeldevpt/ptmigr/AImpug_000055.html"
+colossal_llama/utils/stream_chat_patch.py,181,181,to,"To optimize communication between devices, it is recommended to set non_blocking to True.
+For more information, please refer to: https://www.hiascend.com/document/detail/zh/canncommercial/700/modeldevpt/ptmigr/AImpug_000055.html"
+inference/inference_example.py,15,15,to,"To optimize communication between devices, it is recommended to set non_blocking to True.
+For more information, please refer to: https://www.hiascend.com/document/detail/zh/canncommercial/700/modeldevpt/ptmigr/AImpug_000055.html"
+inference/inference_example.py,38,38,to,"To optimize communication between devices, it is recommended to set non_blocking to True.
+For more information, please refer to: https://www.hiascend.com/document/detail/zh/canncommercial/700/modeldevpt/ptmigr/AImpug_000055.html"

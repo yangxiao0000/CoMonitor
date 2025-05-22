@@ -1,0 +1,511 @@
+max: 3.5047924029640853e-05
+norm: 0.00010367669892730191
+param_name: module.module.base_model.model.module.model.layers.0.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.03474785014986992
+norm: 0.31352993845939636
+param_name: module.module.base_model.model.module.model.layers.0.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0031788889318704605
+norm: 0.007447659503668547
+param_name: module.module.base_model.model.module.model.layers.0.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.7991206049919128
+norm: 6.4017157554626465
+param_name: module.module.base_model.model.module.model.layers.0.self_attn.v_proj.lora_B.default.weight
+---
+max: 1.2716418495983817e-05
+norm: 6.480878801085055e-05
+param_name: module.module.base_model.model.module.model.layers.1.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.01675696112215519
+norm: 0.12791459262371063
+param_name: module.module.base_model.model.module.model.layers.1.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.01732601225376129
+norm: 0.018064284697175026
+param_name: module.module.base_model.model.module.model.layers.1.self_attn.v_proj.lora_A.default.weight
+---
+max: 2.3457183837890625
+norm: 16.787979125976562
+param_name: module.module.base_model.model.module.model.layers.1.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.00011175526742590591
+norm: 0.00032859604107216
+param_name: module.module.base_model.model.module.model.layers.2.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.14619532227516174
+norm: 0.8642353415489197
+param_name: module.module.base_model.model.module.model.layers.2.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0008831196464598179
+norm: 0.002578126732259989
+param_name: module.module.base_model.model.module.model.layers.2.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.8433395624160767
+norm: 7.381551742553711
+param_name: module.module.base_model.model.module.model.layers.2.self_attn.v_proj.lora_B.default.weight
+---
+max: 4.31899206887465e-05
+norm: 0.00017909299640450627
+param_name: module.module.base_model.model.module.model.layers.3.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.3703535497188568
+norm: 1.0483415126800537
+param_name: module.module.base_model.model.module.model.layers.3.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0010409110691398382
+norm: 0.004501070361584425
+param_name: module.module.base_model.model.module.model.layers.3.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.24337047338485718
+norm: 1.7157164812088013
+param_name: module.module.base_model.model.module.model.layers.3.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.00015780795365571976
+norm: 0.0005050274194218218
+param_name: module.module.base_model.model.module.model.layers.4.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.40206417441368103
+norm: 1.2020076513290405
+param_name: module.module.base_model.model.module.model.layers.4.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.006119346246123314
+norm: 0.006578512489795685
+param_name: module.module.base_model.model.module.model.layers.4.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.933651864528656
+norm: 10.207742691040039
+param_name: module.module.base_model.model.module.model.layers.4.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.00021095862030051649
+norm: 0.0006200387142598629
+param_name: module.module.base_model.model.module.model.layers.5.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.2655895948410034
+norm: 1.5823951959609985
+param_name: module.module.base_model.model.module.model.layers.5.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.005928478203713894
+norm: 0.006215525325387716
+param_name: module.module.base_model.model.module.model.layers.5.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.48000529408454895
+norm: 7.22991418838501
+param_name: module.module.base_model.model.module.model.layers.5.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.00010727307380875573
+norm: 0.000286493799649179
+param_name: module.module.base_model.model.module.model.layers.6.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.4132729768753052
+norm: 1.1894994974136353
+param_name: module.module.base_model.model.module.model.layers.6.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0029937580693513155
+norm: 0.003938160836696625
+param_name: module.module.base_model.model.module.model.layers.6.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.3963930904865265
+norm: 3.3945631980895996
+param_name: module.module.base_model.model.module.model.layers.6.self_attn.v_proj.lora_B.default.weight
+---
+max: 4.8613677790854126e-05
+norm: 0.0002684511709958315
+param_name: module.module.base_model.model.module.model.layers.7.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.42401203513145447
+norm: 1.4195148944854736
+param_name: module.module.base_model.model.module.model.layers.7.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0009401258430443704
+norm: 0.007432287558913231
+param_name: module.module.base_model.model.module.model.layers.7.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.5755876302719116
+norm: 8.090712547302246
+param_name: module.module.base_model.model.module.model.layers.7.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.00012511457316577435
+norm: 0.0004377489094622433
+param_name: module.module.base_model.model.module.model.layers.8.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.6113020181655884
+norm: 1.4829903841018677
+param_name: module.module.base_model.model.module.model.layers.8.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0014170933282002807
+norm: 0.008148027583956718
+param_name: module.module.base_model.model.module.model.layers.8.self_attn.v_proj.lora_A.default.weight
+---
+max: 1.244802713394165
+norm: 11.981544494628906
+param_name: module.module.base_model.model.module.model.layers.8.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.0002427895087748766
+norm: 0.0006617311155423522
+param_name: module.module.base_model.model.module.model.layers.9.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.3118126392364502
+norm: 1.7175794839859009
+param_name: module.module.base_model.model.module.model.layers.9.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.002294745296239853
+norm: 0.0035175844095647335
+param_name: module.module.base_model.model.module.model.layers.9.self_attn.v_proj.lora_A.default.weight
+---
+max: 3.512221336364746
+norm: 10.932381629943848
+param_name: module.module.base_model.model.module.model.layers.9.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.00013644354476127774
+norm: 0.00043165127863176167
+param_name: module.module.base_model.model.module.model.layers.10.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.306316614151001
+norm: 1.0579760074615479
+param_name: module.module.base_model.model.module.model.layers.10.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.005178131628781557
+norm: 0.006441777106374502
+param_name: module.module.base_model.model.module.model.layers.10.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.7114992737770081
+norm: 7.528201103210449
+param_name: module.module.base_model.model.module.model.layers.10.self_attn.v_proj.lora_B.default.weight
+---
+max: 5.267719825496897e-05
+norm: 0.00014719655155204237
+param_name: module.module.base_model.model.module.model.layers.11.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.1854262799024582
+norm: 0.7533867359161377
+param_name: module.module.base_model.model.module.model.layers.11.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.001576638431288302
+norm: 0.009405480697751045
+param_name: module.module.base_model.model.module.model.layers.11.self_attn.v_proj.lora_A.default.weight
+---
+max: 1.7457218170166016
+norm: 14.236471176147461
+param_name: module.module.base_model.model.module.model.layers.11.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.00018073961837217212
+norm: 0.0004737061681225896
+param_name: module.module.base_model.model.module.model.layers.12.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.13335102796554565
+norm: 0.6685025095939636
+param_name: module.module.base_model.model.module.model.layers.12.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0017954919021576643
+norm: 0.0038634552620351315
+param_name: module.module.base_model.model.module.model.layers.12.self_attn.v_proj.lora_A.default.weight
+---
+max: 4.002954483032227
+norm: 10.263667106628418
+param_name: module.module.base_model.model.module.model.layers.12.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.00025503343204036355
+norm: 0.0007500553037971258
+param_name: module.module.base_model.model.module.model.layers.13.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.7324765920639038
+norm: 2.652418375015259
+param_name: module.module.base_model.model.module.model.layers.13.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0007707118056714535
+norm: 0.0038060196675360203
+param_name: module.module.base_model.model.module.model.layers.13.self_attn.v_proj.lora_A.default.weight
+---
+max: 1.401705026626587
+norm: 8.20473575592041
+param_name: module.module.base_model.model.module.model.layers.13.self_attn.v_proj.lora_B.default.weight
+---
+max: 5.241861072136089e-05
+norm: 0.0001252263318747282
+param_name: module.module.base_model.model.module.model.layers.14.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.08462327718734741
+norm: 0.3574117124080658
+param_name: module.module.base_model.model.module.model.layers.14.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.000296059442916885
+norm: 0.001996275968849659
+param_name: module.module.base_model.model.module.model.layers.14.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.5566509962081909
+norm: 4.895833969116211
+param_name: module.module.base_model.model.module.model.layers.14.self_attn.v_proj.lora_B.default.weight
+---
+max: 0.00011852674651890993
+norm: 0.0003307567094452679
+param_name: module.module.base_model.model.module.model.layers.15.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.48661765456199646
+norm: 1.3692630529403687
+param_name: module.module.base_model.model.module.model.layers.15.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.002462454605847597
+norm: 0.002935688942670822
+param_name: module.module.base_model.model.module.model.layers.15.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.3127220869064331
+norm: 2.428493022918701
+param_name: module.module.base_model.model.module.model.layers.15.self_attn.v_proj.lora_B.default.weight
+---
+max: 6.014975951984525e-05
+norm: 0.00015517348947469145
+param_name: module.module.base_model.model.module.model.layers.16.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.19271011650562286
+norm: 0.42356589436531067
+param_name: module.module.base_model.model.module.model.layers.16.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0024476912803947926
+norm: 0.0037115933373570442
+param_name: module.module.base_model.model.module.model.layers.16.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.6464799046516418
+norm: 3.282585620880127
+param_name: module.module.base_model.model.module.model.layers.16.self_attn.v_proj.lora_B.default.weight
+---
+max: 2.8037944503012113e-05
+norm: 7.841417391318828e-05
+param_name: module.module.base_model.model.module.model.layers.17.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.10750728100538254
+norm: 0.29778504371643066
+param_name: module.module.base_model.model.module.model.layers.17.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.00022608459403272718
+norm: 0.002059338614344597
+param_name: module.module.base_model.model.module.model.layers.17.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.3409406840801239
+norm: 2.931276321411133
+param_name: module.module.base_model.model.module.model.layers.17.self_attn.v_proj.lora_B.default.weight
+---
+max: 5.914502253290266e-05
+norm: 0.00015463352610822767
+param_name: module.module.base_model.model.module.model.layers.18.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.2739332318305969
+norm: 0.6992965936660767
+param_name: module.module.base_model.model.module.model.layers.18.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0008907022420316935
+norm: 0.001455708290450275
+param_name: module.module.base_model.model.module.model.layers.18.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.37395742535591125
+norm: 2.1158814430236816
+param_name: module.module.base_model.model.module.model.layers.18.self_attn.v_proj.lora_B.default.weight
+---
+max: 2.446304279146716e-05
+norm: 8.024366979952902e-05
+param_name: module.module.base_model.model.module.model.layers.19.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.05237501859664917
+norm: 0.2769604027271271
+param_name: module.module.base_model.model.module.model.layers.19.self_attn.q_proj.lora_B.default.weight
+---
+max: 6.633963494095951e-05
+norm: 0.0002033281052717939
+param_name: module.module.base_model.model.module.model.layers.19.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.06421749293804169
+norm: 0.4317154288291931
+param_name: module.module.base_model.model.module.model.layers.19.self_attn.v_proj.lora_B.default.weight
+---
+max: 3.898419163306244e-05
+norm: 0.00011130710481666028
+param_name: module.module.base_model.model.module.model.layers.20.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.17236922681331635
+norm: 0.35799896717071533
+param_name: module.module.base_model.model.module.model.layers.20.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0009978277375921607
+norm: 0.0010996981291100383
+param_name: module.module.base_model.model.module.model.layers.20.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.07736045122146606
+norm: 0.8086994886398315
+param_name: module.module.base_model.model.module.model.layers.20.self_attn.v_proj.lora_B.default.weight
+---
+max: 1.814256756915711e-05
+norm: 7.694445230299607e-05
+param_name: module.module.base_model.model.module.model.layers.21.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.10419771820306778
+norm: 0.4167878031730652
+param_name: module.module.base_model.model.module.model.layers.21.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.00010817898146342486
+norm: 0.0009746490395627916
+param_name: module.module.base_model.model.module.model.layers.21.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.07828539609909058
+norm: 0.9013308882713318
+param_name: module.module.base_model.model.module.model.layers.21.self_attn.v_proj.lora_B.default.weight
+---
+max: 2.5333854864584282e-05
+norm: 7.373226981144398e-05
+param_name: module.module.base_model.model.module.model.layers.22.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.11744127422571182
+norm: 0.2641085088253021
+param_name: module.module.base_model.model.module.model.layers.22.self_attn.q_proj.lora_B.default.weight
+---
+max: 7.666343299206346e-05
+norm: 0.000682212645187974
+param_name: module.module.base_model.model.module.model.layers.22.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.23520252108573914
+norm: 1.1318113803863525
+param_name: module.module.base_model.model.module.model.layers.22.self_attn.v_proj.lora_B.default.weight
+---
+max: 1.4350577657751273e-05
+norm: 4.0499060560250655e-05
+param_name: module.module.base_model.model.module.model.layers.23.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.06472589075565338
+norm: 0.17680947482585907
+param_name: module.module.base_model.model.module.model.layers.23.self_attn.q_proj.lora_B.default.weight
+---
+max: 6.350161856971681e-05
+norm: 0.0005872095352970064
+param_name: module.module.base_model.model.module.model.layers.23.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.062177058309316635
+norm: 0.8232413530349731
+param_name: module.module.base_model.model.module.model.layers.23.self_attn.v_proj.lora_B.default.weight
+---
+max: 1.231608803209383e-05
+norm: 3.932416802854277e-05
+param_name: module.module.base_model.model.module.model.layers.24.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.0469742976129055
+norm: 0.13094253838062286
+param_name: module.module.base_model.model.module.model.layers.24.self_attn.q_proj.lora_B.default.weight
+---
+max: 8.383366366615519e-05
+norm: 0.0006392845534719527
+param_name: module.module.base_model.model.module.model.layers.24.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.10931594669818878
+norm: 1.1879726648330688
+param_name: module.module.base_model.model.module.model.layers.24.self_attn.v_proj.lora_B.default.weight
+---
+max: 2.2208150767255574e-05
+norm: 7.846150401746854e-05
+param_name: module.module.base_model.model.module.model.layers.25.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.21913713216781616
+norm: 0.3649725914001465
+param_name: module.module.base_model.model.module.model.layers.25.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0007142167305573821
+norm: 0.0007569675799459219
+param_name: module.module.base_model.model.module.model.layers.25.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.10302525758743286
+norm: 1.3904988765716553
+param_name: module.module.base_model.model.module.model.layers.25.self_attn.v_proj.lora_B.default.weight
+---
+max: 1.588278428243939e-05
+norm: 4.2107905755983666e-05
+param_name: module.module.base_model.model.module.model.layers.26.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.028925646096467972
+norm: 0.1530722677707672
+param_name: module.module.base_model.model.module.model.layers.26.self_attn.q_proj.lora_B.default.weight
+---
+max: 8.992684888653457e-05
+norm: 0.0003979534958489239
+param_name: module.module.base_model.model.module.model.layers.26.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.12219050526618958
+norm: 0.7925388813018799
+param_name: module.module.base_model.model.module.model.layers.26.self_attn.v_proj.lora_B.default.weight
+---
+max: 1.678311309660785e-05
+norm: 5.7318542530993e-05
+param_name: module.module.base_model.model.module.model.layers.27.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.09227535873651505
+norm: 0.1768253743648529
+param_name: module.module.base_model.model.module.model.layers.27.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0002795543987303972
+norm: 0.00032012691372074187
+param_name: module.module.base_model.model.module.model.layers.27.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.35780608654022217
+norm: 1.1092712879180908
+param_name: module.module.base_model.model.module.model.layers.27.self_attn.v_proj.lora_B.default.weight
+---
+max: 2.2763309971196577e-05
+norm: 7.540192018495873e-05
+param_name: module.module.base_model.model.module.model.layers.28.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.04779981076717377
+norm: 0.14877928793430328
+param_name: module.module.base_model.model.module.model.layers.28.self_attn.q_proj.lora_B.default.weight
+---
+max: 4.440439079189673e-05
+norm: 0.0004203370481263846
+param_name: module.module.base_model.model.module.model.layers.28.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.04487727954983711
+norm: 0.3503134548664093
+param_name: module.module.base_model.model.module.model.layers.28.self_attn.v_proj.lora_B.default.weight
+---
+max: 2.4344935809494928e-05
+norm: 9.676752961240709e-05
+param_name: module.module.base_model.model.module.model.layers.29.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.12224216759204865
+norm: 0.2678828835487366
+param_name: module.module.base_model.model.module.model.layers.29.self_attn.q_proj.lora_B.default.weight
+---
+max: 4.345090565038845e-05
+norm: 0.00027771267923526466
+param_name: module.module.base_model.model.module.model.layers.29.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.04496661201119423
+norm: 0.4285392761230469
+param_name: module.module.base_model.model.module.model.layers.29.self_attn.v_proj.lora_B.default.weight
+---
+max: 2.686011794139631e-05
+norm: 0.0001140472522820346
+param_name: module.module.base_model.model.module.model.layers.30.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.13276910781860352
+norm: 0.3116266131401062
+param_name: module.module.base_model.model.module.model.layers.30.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.00021823460701853037
+norm: 0.0002745325618889183
+param_name: module.module.base_model.model.module.model.layers.30.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.06350365281105042
+norm: 0.5415852069854736
+param_name: module.module.base_model.model.module.model.layers.30.self_attn.v_proj.lora_B.default.weight
+---
+max: 6.904677320562769e-06
+norm: 7.945979450596496e-05
+param_name: module.module.base_model.model.module.model.layers.31.self_attn.q_proj.lora_A.default.weight
+---
+max: 0.031703393906354904
+norm: 0.12802991271018982
+param_name: module.module.base_model.model.module.model.layers.31.self_attn.q_proj.lora_B.default.weight
+---
+max: 0.0003284284030087292
+norm: 0.00039555865805596113
+param_name: module.module.base_model.model.module.model.layers.31.self_attn.v_proj.lora_A.default.weight
+---
+max: 0.11409009993076324
+norm: 0.5465895533561707
+param_name: module.module.base_model.model.module.model.layers.31.self_attn.v_proj.lora_B.default.weight

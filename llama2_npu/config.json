@@ -1,0 +1,6 @@
+{
+    "targets": [],
+    "format": "yaml",
+    "mode": "ddp",
+    "ops": ["norm"]
+}

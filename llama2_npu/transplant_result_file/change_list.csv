@@ -1,0 +1,49 @@
+File,Start Line,End Line,Operation Type,Message
+setup.py,4,7,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+train.py,286,291,INSERT,add statement of sampler.set_epoch
+train.py,181,183,INSERT,init statement of DistributedDataParallel
+train.py,13,13,INSERT,import torch_npu
+train.py,436,441,INSERT,"['import torch.npu', ""if torch.npu.current_device() != DEVICE_ID:\n    torch.npu.set_device(f'npu:{DEVICE_ID}')"", ""RANK_SIZE = int(os.getenv('RANK_SIZE'))"", ""RANK_ID = int(os.getenv('RANK_ID'))"", ""torch.distributed.init_process_group('hccl', rank=RANK_ID, world_size=RANK_SIZE)""]"
+train.py,436,439,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+train.py,352,352,MODIFY,change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+train.py,350,350,MODIFY,"change the arg at position 1 of function torch.tensor to f'npu:{get_current_device()}' if isinstance(get_current_device(), int) else get_current_device()"
+colossal_llama/dataset/conversation.py,20,23,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/dataset/dummy_dataset.py,1,1,INSERT,import torch_npu
+colossal_llama/dataset/dummy_dataset.py,7,10,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/dataset/dummy_dataset.py,11,13,MODIFY,"change the arg at position 3 of function torch.randint to f'npu:{get_accelerator().get_current_device()}' if isinstance(get_accelerator().get_current_device(), int) else get_accelerator().get_current_device()"
+colossal_llama/dataset/loader.py,8,8,INSERT,import torch_npu
+colossal_llama/dataset/loader.py,16,19,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/dataset/spliced_and_tokenized_dataset.py,14,14,INSERT,import torch_npu
+colossal_llama/dataset/spliced_and_tokenized_dataset.py,25,28,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/model/init_model.py,10,10,INSERT,import torch_npu
+colossal_llama/model/init_model.py,18,21,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/model/init_model.py,55,55,MODIFY,change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+colossal_llama/model/init_model.py,75,75,MODIFY,change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+colossal_llama/model/init_model.py,50,50,MODIFY,change the arg at position 0 of function torch.device to f'npu:{DEVICE_ID}'
+colossal_llama/model/init_model.py,51,51,MODIFY,change the arg at position 0 of function torch.device to f'npu:{DEVICE_ID}'
+colossal_llama/model/init_model.py,50,50,MODIFY,"replace string ""cuda:"" with ""npu:"""
+colossal_llama/tokenizer/init_tokenizer.py,18,21,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/utils/ckpt_io.py,12,12,INSERT,import torch_npu
+colossal_llama/utils/ckpt_io.py,28,31,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/utils/froze.py,7,10,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/utils/neftune_patch.py,15,15,INSERT,import torch_npu
+colossal_llama/utils/neftune_patch.py,25,28,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/utils/stream_chat_patch.py,4,4,INSERT,import torch_npu
+colossal_llama/utils/stream_chat_patch.py,13,16,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+colossal_llama/utils/stream_chat_patch.py,115,115,MODIFY,change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+colossal_llama/utils/stream_chat_patch.py,181,181,MODIFY,change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+colossal_llama/utils/utils.py,5,5,INSERT,import torch_npu
+colossal_llama/utils/utils.py,21,24,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+dataset/prepare_pretrain_dataset.py,23,26,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+dataset/prepare_sft_dataset.py,20,23,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+inference/inference_example.py,15,17,INSERT,init statement of DistributedDataParallel
+inference/inference_example.py,28,30,INSERT,init statement of DistributedDataParallel
+inference/inference_example.py,3,3,INSERT,import torch_npu
+inference/inference_example.py,12,15,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+inference/inference_example.py,15,15,MODIFY,change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+inference/inference_example.py,38,38,MODIFY,change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+inference/inference_example.py,12,12,MODIFY,"replace string ""cuda"" with ""npu"""
+inference/inference_example.py,62,62,MODIFY,"replace string ""cuda:"" with ""npu:"""
+inference/stream_chat_example.py,11,13,INSERT,init statement of DistributedDataParallel
+inference/stream_chat_example.py,6,9,INSERT,"['import os', 'DEVICE_ID= 0', ""if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n    DEVICE_ID= int(os.getenv('DEVICE_ID'))""]"
+inference/stream_chat_example.py,10,10,MODIFY,change function cuda to npu

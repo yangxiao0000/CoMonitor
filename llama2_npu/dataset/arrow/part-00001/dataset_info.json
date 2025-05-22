@@ -1,0 +1,76 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "json",
+  "dataset_size": 1327762,
+  "description": "",
+  "download_checksums": {
+    "/root/.cache/000030/Reference/ColossalAI-main/applications/Colossal-LLaMA_msft_multi/dataset/jsonl/part-00001.jsonl": {
+      "num_bytes": 1248580,
+      "checksum": null
+    }
+  },
+  "download_size": 1248580,
+  "features": {
+    "messages": [
+      {
+        "from": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "input_ids": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "inputs_decode": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "labels_decode": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "seq_length": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "seq_category": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 2576342,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1327762,
+      "num_examples": 749,
+      "dataset_name": "json"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

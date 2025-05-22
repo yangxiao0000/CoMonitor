@@ -1,0 +1,112 @@
+2025-02-15 15:19:20 [INFO]    Initialing rules...
+2025-02-15 15:19:20 [INFO]    MsFmkTransplt start working now, please wait for a moment.
+2025-02-15 15:19:20 [INFO]    Analysis start...
+2025-02-15 15:19:20 [INFO]    [Progress:  0.00%]  Start analysis setup.py.
+2025-02-15 15:19:22 [INFO]    [Progress:  0.00%]  line: 4 ~ 7 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:22 [INFO]    [Progress:  0.00%]  Analysis setup.py complete.
+2025-02-15 15:19:22 [INFO]    [Progress:  5.00%]  Start analysis train.py.
+2025-02-15 15:19:24 [INFO]    [Progress:  5.00%]  line: 352 ~ 352 Operation Type: SUGGESTION Message: to has a suggestion about performance
+2025-02-15 15:19:30 [INFO]    [Progress:  5.00%]  line: 286 ~ 291 Operation Type: INSERT Message: add statement of sampler.set_epoch
+2025-02-15 15:19:30 [INFO]    [Progress:  5.00%]  line: 181 ~ 183 Operation Type: INSERT Message: init statement of DistributedDataParallel
+2025-02-15 15:19:30 [INFO]    [Progress:  5.00%]  line: 13 ~ 13 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:30 [INFO]    [Progress:  5.00%]  line: 436 ~ 441 Operation Type: INSERT Message: ['import torch.npu', "if torch.npu.current_device() != DEVICE_ID:\n torch.npu.set_device(f'npu:{DEVICE_ID}')", "RANK_SIZE = int(os.getenv('RANK_SIZE'))", "RANK_ID = int(os.getenv('RANK_ID'))", "torch.distributed.init_process_group('hccl', rank=RANK_ID, world_size=RANK_SIZE)"]
+2025-02-15 15:19:30 [INFO]    [Progress:  5.00%]  line: 436 ~ 439 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:30 [INFO]    [Progress:  5.00%]  line: 352 ~ 352 Operation Type: MODIFY Message: change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+2025-02-15 15:19:30 [INFO]    [Progress:  5.00%]  line: 350 ~ 350 Operation Type: MODIFY Message: change the arg at position 1 of function torch.tensor to f'npu:{get_current_device()}' if isinstance(get_current_device(), int) else get_current_device()
+2025-02-15 15:19:30 [INFO]    [Progress:  5.00%]  Analysis train.py complete.
+2025-02-15 15:19:30 [INFO]    [Progress: 10.00%]  Start analysis colossal_llama/__init__.py.
+2025-02-15 15:19:30 [INFO]    [Progress: 10.00%]  Analysis colossal_llama/__init__.py complete.
+2025-02-15 15:19:30 [INFO]    [Progress: 15.00%]  Start analysis colossal_llama/dataset/__init__.py.
+2025-02-15 15:19:30 [INFO]    [Progress: 15.00%]  Analysis colossal_llama/dataset/__init__.py complete.
+2025-02-15 15:19:30 [INFO]    [Progress: 20.00%]  Start analysis colossal_llama/dataset/conversation.py.
+2025-02-15 15:19:32 [INFO]    [Progress: 20.00%]  line: 20 ~ 23 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:32 [INFO]    [Progress: 20.00%]  Analysis colossal_llama/dataset/conversation.py complete.
+2025-02-15 15:19:32 [INFO]    [Progress: 25.00%]  Start analysis colossal_llama/dataset/dummy_dataset.py.
+2025-02-15 15:19:32 [INFO]    [Progress: 25.00%]  line: 1 ~ 1 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:32 [INFO]    [Progress: 25.00%]  line: 7 ~ 10 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:32 [INFO]    [Progress: 25.00%]  line: 11 ~ 13 Operation Type: MODIFY Message: change the arg at position 3 of function torch.randint to f'npu:{get_accelerator().get_current_device()}' if isinstance(get_accelerator().get_current_device(), int) else get_accelerator().get_current_device()
+2025-02-15 15:19:32 [INFO]    [Progress: 25.00%]  Analysis colossal_llama/dataset/dummy_dataset.py complete.
+2025-02-15 15:19:32 [INFO]    [Progress: 30.00%]  Start analysis colossal_llama/dataset/loader.py.
+2025-02-15 15:19:35 [INFO]    [Progress: 30.00%]  line: 8 ~ 8 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:35 [INFO]    [Progress: 30.00%]  line: 16 ~ 19 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:35 [INFO]    [Progress: 30.00%]  Analysis colossal_llama/dataset/loader.py complete.
+2025-02-15 15:19:35 [INFO]    [Progress: 35.00%]  Start analysis colossal_llama/dataset/spliced_and_tokenized_dataset.py.
+2025-02-15 15:19:40 [INFO]    [Progress: 35.00%]  line: 14 ~ 14 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:40 [INFO]    [Progress: 35.00%]  line: 25 ~ 28 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:40 [INFO]    [Progress: 35.00%]  Analysis colossal_llama/dataset/spliced_and_tokenized_dataset.py complete.
+2025-02-15 15:19:40 [INFO]    [Progress: 40.00%]  Start analysis colossal_llama/model/init_model.py.
+2025-02-15 15:19:40 [INFO]    [Progress: 40.00%]  line: 55 ~ 55 Operation Type: SUGGESTION Message: to has a suggestion about performance
+2025-02-15 15:19:40 [INFO]    [Progress: 40.00%]  line: 75 ~ 75 Operation Type: SUGGESTION Message: to has a suggestion about performance
+2025-02-15 15:19:40 [INFO]    [Progress: 40.00%]  line: 97 ~ 97 Operation Type: SUGGESTION Message: to has a suggestion about performance
+2025-02-15 15:19:42 [INFO]    [Progress: 40.00%]  line: 10 ~ 10 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:42 [INFO]    [Progress: 40.00%]  line: 18 ~ 21 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:42 [INFO]    [Progress: 40.00%]  line: 55 ~ 55 Operation Type: MODIFY Message: change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+2025-02-15 15:19:42 [INFO]    [Progress: 40.00%]  line: 75 ~ 75 Operation Type: MODIFY Message: change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+2025-02-15 15:19:42 [INFO]    [Progress: 40.00%]  line: 50 ~ 50 Operation Type: MODIFY Message: change the arg at position 0 of function torch.device to f'npu:{DEVICE_ID}'
+2025-02-15 15:19:42 [INFO]    [Progress: 40.00%]  line: 51 ~ 51 Operation Type: MODIFY Message: change the arg at position 0 of function torch.device to f'npu:{DEVICE_ID}'
+2025-02-15 15:19:42 [INFO]    [Progress: 40.00%]  line: 50 ~ 50 Operation Type: MODIFY Message: replace string "cuda:" with "npu:"
+2025-02-15 15:19:42 [INFO]    [Progress: 40.00%]  Analysis colossal_llama/model/init_model.py complete.
+2025-02-15 15:19:42 [INFO]    [Progress: 45.00%]  Start analysis colossal_llama/tokenizer/init_tokenizer.py.
+2025-02-15 15:19:43 [INFO]    [Progress: 45.00%]  line: 18 ~ 21 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:43 [INFO]    [Progress: 45.00%]  Analysis colossal_llama/tokenizer/init_tokenizer.py complete.
+2025-02-15 15:19:43 [INFO]    [Progress: 50.00%]  Start analysis colossal_llama/utils/__init__.py.
+2025-02-15 15:19:43 [INFO]    [Progress: 50.00%]  Analysis colossal_llama/utils/__init__.py complete.
+2025-02-15 15:19:43 [INFO]    [Progress: 55.00%]  Start analysis colossal_llama/utils/ckpt_io.py.
+2025-02-15 15:19:44 [INFO]    [Progress: 55.00%]  line: 12 ~ 12 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:44 [INFO]    [Progress: 55.00%]  line: 28 ~ 31 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:44 [INFO]    [Progress: 55.00%]  Analysis colossal_llama/utils/ckpt_io.py complete.
+2025-02-15 15:19:44 [INFO]    [Progress: 60.00%]  Start analysis colossal_llama/utils/froze.py.
+2025-02-15 15:19:44 [INFO]    [Progress: 60.00%]  line: 7 ~ 10 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:44 [INFO]    [Progress: 60.00%]  Analysis colossal_llama/utils/froze.py complete.
+2025-02-15 15:19:44 [INFO]    [Progress: 65.00%]  Start analysis colossal_llama/utils/neftune_patch.py.
+2025-02-15 15:19:44 [INFO]    [Progress: 65.00%]  line: 15 ~ 15 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:44 [INFO]    [Progress: 65.00%]  line: 25 ~ 28 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:44 [INFO]    [Progress: 65.00%]  Analysis colossal_llama/utils/neftune_patch.py complete.
+2025-02-15 15:19:44 [INFO]    [Progress: 70.00%]  Start analysis colossal_llama/utils/stream_chat_patch.py.
+2025-02-15 15:19:45 [INFO]    [Progress: 70.00%]  line: 115 ~ 115 Operation Type: SUGGESTION Message: to has a suggestion about performance
+2025-02-15 15:19:45 [INFO]    [Progress: 70.00%]  line: 181 ~ 181 Operation Type: SUGGESTION Message: to has a suggestion about performance
+2025-02-15 15:19:48 [INFO]    [Progress: 70.00%]  line: 4 ~ 4 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:48 [INFO]    [Progress: 70.00%]  line: 13 ~ 16 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:48 [INFO]    [Progress: 70.00%]  line: 115 ~ 115 Operation Type: MODIFY Message: change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+2025-02-15 15:19:48 [INFO]    [Progress: 70.00%]  line: 181 ~ 181 Operation Type: MODIFY Message: change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+2025-02-15 15:19:48 [INFO]    [Progress: 70.00%]  Analysis colossal_llama/utils/stream_chat_patch.py complete.
+2025-02-15 15:19:48 [INFO]    [Progress: 75.00%]  Start analysis colossal_llama/utils/utils.py.
+2025-02-15 15:19:48 [INFO]    [Progress: 75.00%]  line: 5 ~ 5 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:48 [INFO]    [Progress: 75.00%]  line: 21 ~ 24 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:48 [INFO]    [Progress: 75.00%]  Analysis colossal_llama/utils/utils.py complete.
+2025-02-15 15:19:48 [INFO]    [Progress: 80.00%]  Start analysis dataset/prepare_pretrain_dataset.py.
+2025-02-15 15:19:51 [INFO]    [Progress: 80.00%]  line: 23 ~ 26 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:51 [INFO]    [Progress: 80.00%]  Analysis dataset/prepare_pretrain_dataset.py complete.
+2025-02-15 15:19:51 [INFO]    [Progress: 85.00%]  Start analysis dataset/prepare_sft_dataset.py.
+2025-02-15 15:19:54 [INFO]    [Progress: 85.00%]  line: 20 ~ 23 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:54 [INFO]    [Progress: 85.00%]  Analysis dataset/prepare_sft_dataset.py complete.
+2025-02-15 15:19:54 [INFO]    [Progress: 90.00%]  Start analysis inference/inference_example.py.
+2025-02-15 15:19:54 [INFO]    [Progress: 90.00%]  line: 15 ~ 15 Operation Type: SUGGESTION Message: to has a suggestion about performance
+2025-02-15 15:19:54 [INFO]    [Progress: 90.00%]  line: 38 ~ 38 Operation Type: SUGGESTION Message: to has a suggestion about performance
+2025-02-15 15:19:55 [INFO]    [Progress: 90.00%]  line: 15 ~ 17 Operation Type: INSERT Message: init statement of DistributedDataParallel
+2025-02-15 15:19:55 [INFO]    [Progress: 90.00%]  line: 28 ~ 30 Operation Type: INSERT Message: init statement of DistributedDataParallel
+2025-02-15 15:19:55 [INFO]    [Progress: 90.00%]  line: 3 ~ 3 Operation Type: INSERT Message: import torch_npu
+2025-02-15 15:19:55 [INFO]    [Progress: 90.00%]  line: 12 ~ 15 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:55 [INFO]    [Progress: 90.00%]  line: 15 ~ 15 Operation Type: MODIFY Message: change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+2025-02-15 15:19:55 [INFO]    [Progress: 90.00%]  line: 38 ~ 38 Operation Type: MODIFY Message: change the arg at position 0 of function to to f'npu:{DEVICE_ID}'
+2025-02-15 15:19:55 [INFO]    [Progress: 90.00%]  line: 12 ~ 12 Operation Type: MODIFY Message: replace string "cuda" with "npu"
+2025-02-15 15:19:55 [INFO]    [Progress: 90.00%]  line: 62 ~ 62 Operation Type: MODIFY Message: replace string "cuda:" with "npu:"
+2025-02-15 15:19:55 [INFO]    [Progress: 90.00%]  Analysis inference/inference_example.py complete.
+2025-02-15 15:19:55 [INFO]    [Progress: 95.00%]  Start analysis inference/stream_chat_example.py.
+2025-02-15 15:19:56 [INFO]    [Progress: 95.00%]  line: 11 ~ 13 Operation Type: INSERT Message: init statement of DistributedDataParallel
+2025-02-15 15:19:56 [INFO]    [Progress: 95.00%]  line: 6 ~ 9 Operation Type: INSERT Message: ['import os', 'DEVICE_ID= 0', "if os.getenv('DEVICE_ID') and str.isdigit(os.getenv('DEVICE_ID')):\n DEVICE_ID= int(os.getenv('DEVICE_ID'))"]
+2025-02-15 15:19:56 [INFO]    [Progress: 95.00%]  line: 10 ~ 10 Operation Type: MODIFY Message: change function cuda to npu
+2025-02-15 15:19:56 [INFO]    [Progress: 95.00%]  Analysis inference/stream_chat_example.py complete.
+2025-02-15 15:19:56 [INFO]    [Progress:100.00%]  MsFmkTransplt run success, welcome to the next use.
+2025-02-15 15:19:56 [INFO]    The detailed transplant result files are in the output path you defined, the relative path is Colossal-LLaMA_msft_multi.
++----------------------------+------------+
+|           files            | statistics |
++----------------------------+------------+
+| api_performance_advice.csv |     11     |
+|      cuda_op_list.csv      |     0      |
+|    unsupported_api.csv     |     0      |
+|      unknown_api.csv       |     7      |
+|  api_precision_advice.csv  |     0      |
+|      change_list.csv       |     48     |
+|   affinity_api_call.csv    |     0      |
++----------------------------+------------+

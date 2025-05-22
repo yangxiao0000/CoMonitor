@@ -1,0 +1,8 @@
+File,Start Line,End Line,OP,Tips
+train.py,53,53,torch.utils.tensorboard.SummaryWriter
+colossal_llama/dataset/loader.py,84,84,torch.LongTensor
+colossal_llama/dataset/loader.py,86,86,torch.LongTensor
+colossal_llama/dataset/loader.py,92,92,torch.LongTensor
+colossal_llama/dataset/loader.py,94,94,torch.LongTensor
+colossal_llama/dataset/loader.py,141,175,torch.utils.data.DistributedSampler
+colossal_llama/model/init_model.py,74,74,torch.LongTensor
